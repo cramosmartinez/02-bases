@@ -10,5 +10,8 @@
     "start:stag": "echo 'Hola mundo desde stag' "
   },
   "author": "Carlos Ramos",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
