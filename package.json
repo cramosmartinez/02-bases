@@ -1,0 +1,14 @@
+{
+  "name": "02-bases",
+  "version": "1.0.0",
+  "description": "Esta es la primera aplicacion real de Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "start:dev": "echo 'Hola mundo desde dev' ",
+    "start:stag": "echo 'Hola mundo desde stag' "
+  },
+  "author": "Carlos Ramos",
+  "license": "MIT"
+}
