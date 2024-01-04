@@ -2,17 +2,10 @@
 //require('./js-foundation/02-destructuring.js' );
 //const { getUserById } = require("./js-foundation/03-callbacks.js");
 //const { getUserById } = require("./js-foundation/04-arrow.js");
-require ('./js-foundation/05-factory.js')
-
-
-
-//const id = 1;
-//getUserById(id, (error, user) => {
-//  if (error) {
-//    throw new Error(error);
-//  }
-//  console.log(user);
-//});
-
-//console.log(emailTemplate);
-//console.log(templateExports.emailTemplate);
+//const {} = require ('./js-foundation/05-factory.js')
+const {buildMakePerson} = require('./js-foundation/05-factory.js');
+const { getUUID, getAge } = require('./plugins');
+const makePerson = buildMakePerson({ getUUID, getAge });
+const obj = { name: "John", birthdate: "1985/10/21" }; // Object literal 
+const John = makePerson(obj);
+console.log(John);
