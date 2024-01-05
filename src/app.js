@@ -4,12 +4,10 @@
 //const { getUserById } = require("./js-foundation/04-arrow.js");
 //const {} = require ('./js-foundation/05-factory.js')
 const getPokemonById = require('./js-foundation/06-promises.js');
-
-getPokemonById(5, (pokemon) => {
-    console.log({pokemon});
-});
-
-
+getPokemonById(1)
+.then( (pokemon) => console.log(pokemon))
+.catch( (error) => console.log("Por favor, intente de nuevo"))
+.finally( () => console.log("Fin de la ejecución"));
 
 
 
