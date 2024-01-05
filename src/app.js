@@ -11,7 +11,8 @@ getPokemonById(1)
 
 
 
-
+//token de acceso
+//publicas
 
 
 
